@@ -1,0 +1,19 @@
+.contact {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.contact a {
+  color: #37f570;
+  text-decoration: underline #37f570 dotted;
+}
+
+@media only screen and (min-width: 680px) {
+  .contact {
+    margin-bottom: 5vh;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
