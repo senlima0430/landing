@@ -26,10 +26,38 @@
   transform: translateX(-4px);
 }
 
+@media (max-width: 720px) {
+  .title {
+    font-size: 64px;
+  }
+}
+
 .subtitle h2 {
   position: relative;
   margin: 0;
   font-size: 64px;
+}
+
+.subtitle::before {
+  content: "Web Engineer";
+  z-index: -1;
+  position: absolute;
+  transform: translate(0.1em, 0.025em);
+  width: auto;
+  color: white;
+  font-size: 64px;
+  font-weight: 600;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media (max-width: 720px) {
+  .subtitle h2 {
+    font-size: 32px;
+  }
+
+  .subtitle::before {
+    font-size: 33px;
+  }
 }
 
 .description {
@@ -43,16 +71,10 @@
   transform: translateX(-2px);
 }
 
-.subtitle::before {
-  content: "Web Engineer";
-  z-index: -1;
-  position: absolute;
-  transform: translate(0.1em, 0.025em);
-  width: auto;
-  color: white;
-  font-size: 64px;
-  font-weight: 600;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+@media (max-width: 720px) {
+  .description h3 {
+    font-size: 24px;
+  }
 }
 
 .footer {

@@ -34,9 +34,11 @@ export function ProvideArea() {
     <div className={styles.container}>
       {fields.map((field) => (
         <div key={field.id} className={styles.inner}>
-          <h3>{field.title}</h3>
           <img src={field.imgSrc} alt={field.alt} />
-          <h4 className={styles.description}>{field.description}</h4>
+          <div className={styles.inner_text}>
+            <h3>{field.title}</h3>
+            <h4 className={styles.description}>{field.description}</h4>
+          </div>
         </div>
       ))}
     </div>
