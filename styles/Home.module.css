@@ -1,0 +1,117 @@
+.container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin: 0 auto;
+  width: 95vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header_content {
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+  font-size: 118px;
+  transform: translateX(-4px);
+}
+
+.subtitle h2 {
+  position: relative;
+  margin: 0;
+  font-size: 64px;
+}
+
+.description {
+  margin-top: 3rem;
+}
+
+.description h3 {
+  margin: 0;
+  line-height: 1.2em;
+  font-size: 36px;
+  transform: translateX(-2px);
+}
+
+.subtitle::before {
+  content: "Web Engineer";
+  z-index: -1;
+  position: absolute;
+  transform: translate(0.1em, 0.025em);
+  width: auto;
+  color: white;
+  font-size: 64px;
+  font-weight: 600;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.footer p {
+  margin-top: 0;
+}
+
+.footer img {
+  margin-left: 0.5rem;
+  height: 1rem;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.about_container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, white 21px, transparent 1%) center,
+    linear-gradient(white 21px, transparent 1%) center, black;
+  background-size: 22px 22px;
+}
+
+.about_title {
+  margin: 0 0 1rem 0;
+  font-size: 24px;
+}
+
+.about_link {
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-size: 30px;
+  font-family: ShareTech;
+  transition: color 0.23s ease-in-out;
+}
+
+.about_link:nth-of-type(1):hover {
+  color: #6e5494;
+}
+
+.about_link:nth-of-type(2):hover {
+  color: #37f570;
+}
