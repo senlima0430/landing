@@ -1,5 +1,5 @@
-import styles from "styles/home.module.css";
-import { Cursor } from "components/Cursor";
+import styles from "styles/home.css";
+import { Cursor } from "components/cursor";
 
 export default function Home() {
   return (
