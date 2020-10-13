@@ -1,13 +1,14 @@
-import styles from "styles/home.css";
+import "styles/global.css";
+import "styles/home.css";
 import { Cursor } from "components/page_cursor";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Cursor />
 
       <header>
-        <nav className={styles.navbar}>
+        <nav className="navbar">
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -40,8 +41,8 @@ export default function Home() {
       </header>
 
       <main>
-        <div className={styles.slogan}>
-          <h1 className={styles.title}>Senlima</h1>
+        <div className="slogan">
+          <h1 className="title">Senlima</h1>
           <h2>Full Stack Developer</h2>
         </div>
       </main>
