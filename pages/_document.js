@@ -36,6 +36,12 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#8f00ff" />
           <meta name="theme-color" content="#8f00ff" />
           <title>Senlima Sun</title>
+          <script
+            async
+            defer
+            data-website-id="a33daf62-4586-43e9-ab90-721729621bc3"
+            src="https://umami-gilt.vercel.app/umami.js"
+          ></script>
         </Head>
         <body>
           <Main />
