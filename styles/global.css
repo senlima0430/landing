@@ -1,4 +1,56 @@
-@font-face {
-  font-family: ShareTech;
-  src: url(/fonts/ShareTech-Regular.ttf) format("truetype");
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #33ff00;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: all 150ms ease;
+  transition-property: transform;
+}
+.cursor.hover {
+  transform: translate(-50%, -50%) scale(1.25);
+  background-color: #33ff00;
+}
+
+@media (max-width: 680px) {
+  .cursor {
+    left: -50px;
+    top: -50px;
+    padding: 0 25px;
+  }
 }
