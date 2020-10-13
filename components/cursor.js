@@ -5,7 +5,7 @@ const isMobile = () => {
   return /Android|Mobi/i.test(ua);
 };
 
-export function Cursor() {
+export default function Cursor() {
   if (typeof navigator !== "undefined" && isMobile()) return null;
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
