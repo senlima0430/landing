@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 90%;
+  height: 100px;
+  max-width: 1024px;
+  font-size: 1.2rem;
+}
+
+.link {
+  display: block;
+  color: #2dd397;
+  font-weight: 500;
+}

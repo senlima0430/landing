@@ -35,6 +35,8 @@ class MyDocument extends Document {
           <meta name="msapplication-config" content="/browserconfig.xml" />
           <meta name="msapplication-TileColor" content="#8f00ff" />
           <meta name="theme-color" content="#8f00ff" />
+          <meta name="description" content="Software Engineer that focus on website and service development" />
+          <link rel="canonical" href="https://senlima.info" />
           <script
             async
             defer

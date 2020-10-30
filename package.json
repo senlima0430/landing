@@ -1,18 +1,46 @@
 {
   "name": "landing",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+  "prettier": {
+    "semi": false,
+    "tabWidth": 2,
+    "printWidth": 78,
+    "useTabs": false,
+    "endOfLine": "lf",
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxSingleQuote": false,
+    "jsxBracketSameLine": false
+  },
   "dependencies": {
-    "next": "9.5.5",
-    "next-images": "^1.4.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "@hookform/resolvers": "^1.0.0",
+    "@n8tb1t/use-scroll-position": "^2.0.3",
+    "cors": "^2.8.5",
+    "framer-motion": "^2.9.4",
+    "isomorphic-fetch": "^3.0.0",
+    "next": "10.0.0",
+    "nodemailer": "^6.4.14",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-hook-form": "^6.9.6",
     "react-icons": "^3.11.0",
-    "sanitize.css": "^12.0.1"
+    "react-is": "^17.0.1",
+    "react-lottie": "^1.2.3",
+    "react-scroll-parallax": "^2.3.4",
+    "sanitize.css": "^12.0.1",
+    "styled-components": "^5.2.0",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.11.1",
+    "prettier": "^2.1.2"
   }
 }
