@@ -38,7 +38,7 @@ export default function Contact() {
   }
 
   return (
-    <Container>
+    <Container id="contact-me">
       <Wrapper>
         <SideImage />
 
