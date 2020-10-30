@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
+import { toast } from 'react-toastify'
 import 'isomorphic-fetch'
 import * as yup from 'yup'
 
@@ -20,11 +22,13 @@ const schema = yup.object().shape({
 })
 
 export default function Contact() {
-  const { register, handleSubmit, errors } = useForm({
+  const [submitting, setSubmitting] = useState(false)
+  const { register, handleSubmit, errors, reset } = useForm({
     resolver: yupResolver(schema),
   })
 
   function onSubmit(data) {
+    setSubmitting(true)
     fetch('/api/contact', {
       method: 'post',
       headers: {
@@ -33,7 +37,11 @@ export default function Contact() {
       },
       body: JSON.stringify(data),
     }).then(res => {
-      console.log(res)
+      if (res.status === 200) {
+        toast.success('✅ Already sent contact request')
+      }
+      setSubmitting(false)
+      reset()
     })
   }
 
@@ -73,7 +81,11 @@ export default function Contact() {
           </label>
           <p style={{ color: 'red' }}>{errors.message?.message}</p>
 
-          <Submit type="submit" value="Submit" />
+          <Submit
+            type="submit"
+            value={submitting ? 'Sending...' : 'Submit'}
+            disabled={submitting}
+          />
         </Form>
       </Wrapper>
     </Container>

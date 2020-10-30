@@ -95,4 +95,8 @@ export const Submit = styled.input`
   &:hover {
     box-shadow: 1px 1px 0px 2px white;
   }
+
+  &:disabled {
+    cursor: default;
+  }
 `
