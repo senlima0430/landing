@@ -37,12 +37,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#8f00ff" />
           <meta name="description" content="Software Engineer that focus on website and service development" />
           <link rel="canonical" href="https://senlima.info" />
-          <script
-            async
-            defer
-            data-website-id="a33daf62-4586-43e9-ab90-721729621bc3"
-            src="https://umami-gilt.vercel.app/umami.js"
-          ></script>
+          <script async src="https://ackee.senlima0430.vercel.app/tracker.js" data-ackee-server="https://ackee.senlima0430.vercel.app" data-ackee-domain-id="6d59df5e-38ea-4633-a864-aa1b4152f63f"></script>
         </Head>
         <body>
           <Main />

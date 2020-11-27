@@ -23,6 +23,7 @@
   "dependencies": {
     "@hookform/resolvers": "^1.0.0",
     "@n8tb1t/use-scroll-position": "^2.0.3",
+    "cookie": "^0.4.1",
     "cors": "^2.8.5",
     "framer-motion": "^2.9.4",
     "isomorphic-fetch": "^3.0.0",

@@ -18,7 +18,7 @@ import {
 const schema = yup.object().shape({
   email: yup.string().email().required(),
   subject: yup.string().required(),
-  message: yup.string().required(),
+  message: yup.string().required().max(180),
 })
 
 export default function Contact() {
